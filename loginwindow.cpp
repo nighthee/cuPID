@@ -24,14 +24,6 @@ void LoginWindow::on_loginButton_clicked()
     qDebug() << "login pressed";
     QString qs = ui->usernameLineEdit->text();
     qDebug() << qs;
-
-    if name ====== username{
-        mw = new MainWindow(this);
-        mw->show();
-        this->hide();
-    }else{
-
-    }
 }
 
 void LoginWindow::on_registerButton_clicked()
