@@ -19,6 +19,7 @@ bool Project::addStudent(Student* stu) {
 bool Project::removeStudent(Student* stu) {
     //removes all student pointers that are == to stu
     // https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom
+    delete stu;
     students.erase( std::remove( students.begin(), students.end(), stu ), students.end() );
     return true;
 }

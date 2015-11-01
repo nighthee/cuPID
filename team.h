@@ -5,14 +5,15 @@
 
 #include <string>
 #include <vector>
+#include <algorithm>
 
 class Student;
 class Team
 {
 public:
     Team(); //default constructor
-    Team(std::string); //string is name of team
-    int maxSize = 5;
+    Team(std::string, int); //string is name of team
+    int maxSize;
     std::string teamName;
     std::vector<Student*> students;
 
