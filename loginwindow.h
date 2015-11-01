@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "mainwindow.h"
+#include "user.h"
+#include <vector>
 
 namespace Ui {
 class LoginWindow;
@@ -14,6 +16,8 @@ class LoginWindow : public QMainWindow
 
 public:
     explicit LoginWindow(QWidget *parent = 0);
+    LoginWindow(QWidget *parent, std::vector<User*> users);
+    std::vector<User*> users;
     ~LoginWindow();
 
 private slots:

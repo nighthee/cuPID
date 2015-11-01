@@ -18,6 +18,8 @@ public:
 private slots:
     void on_projectList_itemSelectionChanged();
 
+    void on_registerProjectButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

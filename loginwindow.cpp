@@ -3,13 +3,16 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 #include "QtDebug"
+#include "user.h"
+#include <vector>
 
-LoginWindow::LoginWindow(QWidget *parent) :
+LoginWindow::LoginWindow(QWidget *parent, std::vector<User*> users):
     QMainWindow(parent),
     ui(new Ui::LoginWindow)
 {
     ui->setupUi(this);
 }
+
 
 LoginWindow::~LoginWindow()
 {
@@ -19,10 +22,16 @@ LoginWindow::~LoginWindow()
 void LoginWindow::on_loginButton_clicked()
 {
     qDebug() << "login pressed";
+    QString qs = ui->usernameLineEdit->text();
+    qDebug() << qs;
 
-    mw = new MainWindow(this);
-    mw->show();
-    this->hide();
+    if name ====== username{
+        mw = new MainWindow(this);
+        mw->show();
+        this->hide();
+    }else{
+
+    }
 }
 
 void LoginWindow::on_registerButton_clicked()

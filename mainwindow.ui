@@ -102,13 +102,13 @@ p, li { white-space: pre-wrap; }
        </rect>
       </property>
       <property name="text">
-       <string>Register</string>
+       <string>Add Student</string>
       </property>
      </widget>
      <widget class="QPushButton" name="runCupidButton">
       <property name="geometry">
        <rect>
-        <x>500</x>
+        <x>520</x>
         <y>180</y>
         <width>98</width>
         <height>27</height>
@@ -157,6 +157,19 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string>Team List</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>180</y>
+        <width>130</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove Student</string>
       </property>
      </widget>
     </widget>
